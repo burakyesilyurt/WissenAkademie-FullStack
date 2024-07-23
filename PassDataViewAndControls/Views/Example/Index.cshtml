@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Example Page";
+
+}
+<h1>Example --> Index</h1>
+
+<div class="justify-content-lg-center">
+    <h1>@ViewBag.GetDate</h1>
+</div>
+<div class="justify-content-lg-center">
+    <ul class="list-group">
+        @foreach (var name in ViewBag.Names)
+        {
+            <li class="list-group-item">
+                <a href="#" class="nav-item">@name</a>
+            </li>
+        }
+    </ul>
+</div>
+
+<div class="justify-content-lg-center">
+    <span class="mx-1">@ViewData["Hour"]</span>
+</div>
+<div class="justify-content-lg-center">
+    <span class="mx-1">@TempData["Day"]</span>
+</div>
+
+<div class="justify-content-lg-center">
+    <a asp-action="Index2" class="btn btn-info">Index 2</a>
+</div>

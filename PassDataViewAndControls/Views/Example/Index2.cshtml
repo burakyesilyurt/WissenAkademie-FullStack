@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Example Page 2";
+}
+
+<h1>Example 2</h1>
+
+
+@*
+    ------------------ Cannot pass data using ViewBag or ViewData, but TempData works fine for redirection ------------------
+           <div class="justify-content-lg-center">
+           <h1>@ViewBag.GetDate</h1>
+       </div>
+       <div class="justify-content-lg-center">
+           <ul class="list-group">
+               @foreach (var name in ViewBag.Names)
+               {
+                   <li class="list-group-item">
+                       <a href="#" class="nav-item">@name</a>
+                   </li>
+               }
+           </ul>
+       </div>
+           <div class="justify-content-lg-center">
+           <span class="mx-1">@ViewData["Hour"]</span>
+       </div>
+*@
