@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Product>
+
+    <a asp-action="Create" asp-controller="Product">Add Product</a>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Category Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProductID</td>
+                <td>@item.ProductName</td>
+                <td>@item.CategoryName</td>
+                <td>@item.Description</td>
+                <td>@item.Price</td>
+                <td>@Html.ActionLink("Details", "Details", "Product", new { id = item.ProductID })</td>
+                <td>@Html.ActionLink("Details From Partial", "ProductDetail", "Product", new { id = item.ProductID })</td>
+            </tr>
+        }
+    </tbody>
+</table>
