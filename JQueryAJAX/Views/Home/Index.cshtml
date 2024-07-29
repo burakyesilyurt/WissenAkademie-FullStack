@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<script>
+    $(document).ready(function () {
+        //alert("sample text");
+        let num1 = 100;
+        let num2 = 50;
+
+            $.ajax({
+        type: "POST",
+        url: '@Url.Action("Calculate")',
+        data: { num1: num1, num2: num2 },
+        dataType: "json",
+        success: function (data) {
+            console.log(data);
+            let jsonData = JSON.stringify(data);
+            console.log(jsonData);
+            var obj = JSON.parse(jsonData);
+            console.log(obj);
+            console.log(obj.add);
+        },
+        error: function (req, status, error) {
+            alert(error)
+            console.log(error);
+        }
+    });
+
+
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("Add")',
+            data: { num1: num1, num2: num2 },
+            dataType: "text",
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (req, status, error) {
+                alert(error)
+                console.log(error);
+            }
+    });
+
+    })
+</script>
