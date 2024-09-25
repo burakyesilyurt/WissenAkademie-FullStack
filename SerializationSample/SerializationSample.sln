@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySerialization", "BinarySerialization\BinarySerialization.csproj", "{ED4E7E0B-37F6-47C0-9E91-4D217D02E1C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlSerialization", "XmlSerialization\XmlSerialization.csproj", "{57FD2B3D-0E4D-4495-B094-3DD17C50E781}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED4E7E0B-37F6-47C0-9E91-4D217D02E1C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED4E7E0B-37F6-47C0-9E91-4D217D02E1C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED4E7E0B-37F6-47C0-9E91-4D217D02E1C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED4E7E0B-37F6-47C0-9E91-4D217D02E1C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57FD2B3D-0E4D-4495-B094-3DD17C50E781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57FD2B3D-0E4D-4495-B094-3DD17C50E781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57FD2B3D-0E4D-4495-B094-3DD17C50E781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57FD2B3D-0E4D-4495-B094-3DD17C50E781}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A435232F-2F3E-40B5-AAA9-55BE6EEA0E3E}
+	EndGlobalSection
+EndGlobal
